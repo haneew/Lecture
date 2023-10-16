@@ -13,18 +13,25 @@ public class Quiz02 {
 		// 총 결제해야 할 금액을 계산하고
 		// 더치페이로 1인당 얼마를 내야하는지 계산하여 출력하는 프로그램을 작성하세요
 		
-		int base = 25500;
 		int fork = 8500;
 		int soju = 4500;
 		int beer = 5000;
+		int add;
+		int num;
+		
 		Scanner sc = new Scanner(System.in);
 	
 		
 		System.out.print("추가 주문 삼겹살 : ");
 		add = sc.nextInt();
+		System.out.print("총 인원수를 입력하세요 : ");
+		num = sc.nextInt();
 		
-		System.out.printf("총 금액은 : %d + %d * %d + %d + %d 입니다", base, fork, add, soju, beer);
+		System.out.printf("총 금액은 : %d 입니다\n", fork * ( 3 +  add) + soju + beer);
+		System.out.printf("1인당 금액은 : %d 입니다", (fork * ( 3 +  add) + soju + beer)/num);
 		
+		
+		sc.close();
 		
 		
 		

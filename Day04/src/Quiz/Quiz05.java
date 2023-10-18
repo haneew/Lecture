@@ -47,7 +47,7 @@ public class Quiz05 {
 	    
 	    
 	    		
-	    System.out.printf("%d 엘리베이터가 우선적으로 움직입니다.", );
+
 	    
 	    
 	    sc.close();

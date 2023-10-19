@@ -10,7 +10,7 @@ public class Quiz02 {
 		Scanner sc = new Scanner(System.in);
 		int answer = ran.nextInt(100) + 1;
 		int user;
-		int count = 1;
+		int count;
 		
 				
 		// 반복을 수행하면서
@@ -23,28 +23,27 @@ public class Quiz02 {
 		// 반복이 끝나면 정답과 횟수를 출력하고 종료.
 		
 		
-		while(true) {
-			System.out.println("값을 입력하세요 : ");			// 여러번 물어봐야하기 때문에 while안에 있어야 한다.
-			user = sc.nextInt();							// 만들기전에 말로 읊어보고 순서를 생각할 것.
-			
+		while(true) {		//  횟수를 알 수 없기 떄문에 무한반복으로 설정하고 내부에서 break로 중단하기.
+		// 		사용자에게 값을 입력받고
+			System.out.println("정수 입력 : ");
+			user = sc.nextInt();
+			//	만약 정답이 입력값보다 작으면
+			if(answer < user) System.out.println("down");
+			//	만약 정답이 입력값보다 크면
+			else if(answer > user)	System.out.println("up");
+			//	일치하면 반복 중단
+			else		break;
+			// 반복횟수 
 			count++;
-			
-			if(answer < user) {
-				System.out.println("down");
-				break;
 			}
-			else if(answer > user) {
-				System.out.println("up");
-				break;
-			}
-			else if(answer == user) {
-				System.out.printf("%d은(는) 정답입니다.\n총 횟수 : %d", user, count);
-				break;
-			}
-			
-		}
-		sc.close();
 		
+		
+		System.out.printf("%d은(는) 정답입니다.\n총 횟수 : %d", user, count);
+		
+		
+		
+		sc.close();
+
 		
 		
 	}

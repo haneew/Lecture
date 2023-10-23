@@ -1,5 +1,7 @@
 package Quiz;
 
+import java.util.Scanner;
+
 public class Quiz03 {
 	public static void main(String[] args) {
 /*
@@ -16,7 +18,22 @@ public class Quiz03 {
   	
   	카드번호를 입력받아서 유효성을 검증하는 코드를 작성하세요
  
- */
+ 	(String, char, int, / , %, +)
+ 	숫자 문자열로 바꾸는거도 들어감
+ 
+ 													replace("-", "")
+*/		
+		
+		Scanner sc = new Scanner(System.in);
+		
+		String input = "1162-3434-1010-2111";		// 유효
+		String input = "1162-3434-1010-2113";		// 유효하지 않음
+//  	홀수는 그대로 두고 짝수는 두배
+		
+//		2배 한 값이 두자리 수이면 각 자릿수를 더함
+		
+//		모든 수의 합을 구하여 10으로 나누어 떨어지는지 확인
+		
 	}
 
 }

@@ -27,7 +27,7 @@ public class Quiz03 {
 		Scanner sc = new Scanner(System.in);
 		
 		String input = "1162-3434-1010-2111";		// 유효
-		String input = "1162-3434-1010-2113";		// 유효하지 않음
+//		String input = "1162-3434-1010-2113";		// 유효하지 않음
 //  	홀수는 그대로 두고 짝수는 두배
 		
 //		2배 한 값이 두자리 수이면 각 자릿수를 더함

@@ -32,7 +32,7 @@ public class Ex02 {
 		// 향상된 for문
 		
 		for(int num : arr) {			// iterable : 순회(순서대로 조회) 가능한 요소이다.
-			System.out.println(num + " ");
+			System.out.print(num + " ");
 		}
 		System.out.println();
 		
@@ -44,13 +44,13 @@ public class Ex02 {
 		// for문의 기본 구조
 		int cnt = 0;					// 반복횟수를 제어할 변수(1)
 		while(cnt < 5) {				// 반복 조건 (횟수) 	(2)
-			System.out.println(cnt);	// 종속문장			(3)
+			System.out.print(cnt);		// 종속문장			(3)
 			cnt++;						// 횟수에 따른 증감		(4)
 		}
 		System.out.println();
 		
 		for(int i = 0; i < 5; i++) {				// for(1; 2; 4){
-			System.out.println(i);					//		 3
+			System.out.print(i);					//		 3
 		}											// }
 		System.out.println();
 		

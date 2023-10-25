@@ -40,7 +40,7 @@ public class Ex01 {
 		int num2 = 1234; // 잘된다
 		System.out.println(num2);	//지역변수는 갈색
 		
-		Test ob = new test();
+		test ob = new test();
 		System.out.println(ob.n1); 	// 클래스의 멤버필드는 파란색
 		
 		// 반복문이 끝난 후에도 값을 남겨서 참조하고 싶다면

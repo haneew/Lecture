@@ -7,7 +7,7 @@ public class Ex03 {
 		String s1 = "a1B2c3D4e5";
 		String filter = "abcdefgABCDEFG";
 		String s2 = "";
-			
+		
 		for(int i = 0; i < s1.length(); i++) {						// 전체 글자 중에서
 			char ch = s1.charAt(i);									// 각 글자를 ch라고 할때
 			String s = ch + "";										// contains 함수에는 문자열을 전달해야 한다

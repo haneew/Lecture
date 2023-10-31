@@ -11,7 +11,7 @@ class Solution {
 //      조건에 맞는 글자만 answer에 더하세요. 이후 단계에서는 new_id 대신 answer로 작업하면 됩니다  
         for(int i = 0; i < new_id.length(); i++) {			// 전체 글자에 
         	char ch = new_id.charAt(i);
-        	  	if((ch >= 'a' && ch <= 'z') || (ch >= 0 && ch <= 9) || ch == '-' || ch == '_' || ch == '.') {
+        	if((ch >= 'a' && ch <= 'z') || (ch >= 0 && ch <= 9) || ch == '-' || ch == '_' || ch == '.') {
         		answer += ch;
         	}
         }

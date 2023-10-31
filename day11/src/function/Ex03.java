@@ -22,7 +22,7 @@ public class Ex03 {
 		int money = 10000;
 		int fee = 500;
 		int lv = 1;
-		int menu;
+		int menu = 0;
 		boolean flag;
 		
 		LOOP : while(true) {
@@ -33,6 +33,7 @@ public class Ex03 {
 			System.out.println("0. 포기");
 			System.out.println("메뉴선택 >>> ");
 			menu = sc.nextInt();
+			
 			switch(menu) {
 			case 1:
 				if(money < fee) {
@@ -91,7 +92,7 @@ public class Ex03 {
 		// 3) lv이 5보다 작으면 successs =true
 		//		만약 value가 line보다 작거나 같으면 true
 		// 		아니면 success =false
-		System.out.printf("%d / %d (%s)\n", value, limit value <= limit);
+		System.out.printf("%d / %d (%s)\n", value, limit, value <= limit);
 		success = value 
 		return success;
 				

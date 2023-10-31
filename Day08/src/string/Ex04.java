@@ -8,7 +8,7 @@ public class Ex04 {
 		
 		
 		for(int i = 0; i < arr.length; i++) {		// 각 전체 데이터 중에서
-		String name = arr[i];					// 각 개별 데이터를 name이라고 할 때
+		String name = arr[i];						// 각 개별 데이터를 name이라고 할 때
 			if(name.contains(search)) {				// name에 "구"라는 글자가 포함되면
 //				System.out.println(name);			// 출력
 				s2 += name + "\n";					// 이름과 줄바꿈문자를 더한다.

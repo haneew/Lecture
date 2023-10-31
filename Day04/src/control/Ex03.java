@@ -2,6 +2,7 @@ package control;
 
 public class Ex03 {
 	public static void main(String[] args) {
+		
 		// else : 조건이 참이 아니면 실행할 내용을 작성한다.
 		// else는 단독으로 사용할 수 없고, 이전에 if가 나타나있어야하고 연속되어있어야 한다.
 

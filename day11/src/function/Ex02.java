@@ -29,7 +29,14 @@ public class Ex02 {
 		result = getInfo(name, birth);
 		System.out.println(result);
 		sc.close();
-	}
+	}  //end of main()
+	
+	
+	
+	
+	
+	
+	
 	
 	static boolean isNumeric(String str) {
 		boolean flag = true;

@@ -1,0 +1,36 @@
+1. alter user scott identified by tiger;
+
+2. 데이터베이스의 사용목적은 데이터의 권한 부여와 회수를 통하여 특정 데이터에 대한 
+접근성과 보안성을 높여준다. 또한 데이터 중복을 최소화하여 유지/보수 관리가 용이하다.
+데이터베이스라는 큰 틀에서 각 유저간의 데이터의 교류가 원활해진다.
+하지만 전산화 비용이 증가하며 백업 및 복구가 어렵다.
+
+3. DDL : creat alter drop truncate
+   DML : select insert delete update
+   
+4.
+create table STUDENT (
+   	name 	    varchar2(100)	not null,
+	age	    number		not null,
+	gender      varchar2(20),
+	kor	    number		check(kor >= 0 and kor <= 100),
+	eng	    number              check(eng >= 0 and eng <= 100),
+	math	    number      	check(math >= 0 and math <= 100)
+)
+ 
+5. create sequence customers_seq
+    start with 1000
+    MAXVALUE 999999999
+    INCREMENT by 1
+    NOCACHE
+    NOCYCLE;
+
+6.primary key 기본키,pk, 대표되는 값
+
+  unique  대표성을 떠나 유일한 값. 빈값이 성립가능하다.
+
+  not null 필수값을 넣어야한다. 빈 값으로 둘 수 없다.
+
+  check 조건을 두어서 일정 값으로 제약을 둔다.
+
+  default 기본값, 아무런 값을 넣지 않으면 미리 제약해둔 기본값으로 설정되도록 한다.
